@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: hsl(157, 74%, 62%);
+    --primary-active: hsl(157, 100%, 85%);
+    --dark: hsl(224, 35%, 11%);
+    --transparent-dark: hsl(224, 35%, 11%, 0.9);
+    --light: hsl(0, 0%, 100%);
+    --dark-gray: hsl(225, 26%, 23%);
+    --medium-gray: #5b678b;
+    --light-gray: hsl(225, 40%, 83%);
+
+    --font-family: 'Chivo', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: var(--font-family);
+    color: var(--light);
+    height: 100vh;
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    background-color: var(--transparent-dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 62px;
+    padding-inline: 24px;
+    text-align: center;
+}
+
+/* Images */
+
+.logo {
+    margin-inline: auto;
+}
+
+.logo-container {
+    margin-top: 33px;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.company-logo {
+    width: 100%;
+    filter: invert(38%) sepia(35%) saturate(406%) hue-rotate(192deg) brightness(74%) contrast(91%);
+}
+
+.dots {
+    position: absolute;
+    bottom: -150px;
+    left: 30px;
+}
+
+/* Typography */
+
+.title {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--primary);
+    font-size: 26px;
+    line-height: 38px;
+    margin-top: 57px;
+}
+
+.title-span {
+    color: var(--light);
+}
+
+.text {
+    color: var(--light-gray);
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+/* Form inputs */
+
+.request-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 48px;
+}
+
+.form {
+    width: 100%;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 9px 32px 9px 32px;
+    border-radius: 28px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.input {
+    background-color: var(--dark-gray);
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+::placeholder {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-weight: 400;
+}
+
+.request-btn {
+    background-color: var(--primary);
+    color: var(--dark);
+}
