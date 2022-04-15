@@ -14,7 +14,7 @@
     --transparent-dark: hsl(224, 35%, 11%, 0.9);
     --light: hsl(0, 0%, 100%);
     --dark-gray: hsl(225, 26%, 23%);
-    --medium-gray: #5b678b;
+    --medium-gray: hsl(225, 21%, 45%);
     --light-gray: hsl(225, 40%, 83%);
 
     --font-family: 'Chivo', sans-serif;
@@ -25,10 +25,26 @@ body {
     font-family: var(--font-family);
     color: var(--light);
     height: 100vh;
+    position: relative;
+}
+
+body::after {
+    content: '';
     background-image: url(./assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    body::after {
+        background-image: url(./assets/tablet/image-host.jpg);
+    }
 }
 
 main {
