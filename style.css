@@ -134,6 +134,7 @@ main {
 .request-btn {
     background-color: var(--primary);
     color: var(--dark);
+    
 }
 
 /* Media Queries */
@@ -143,7 +144,7 @@ main {
         background-image: url(./assets/tablet/image-host.jpg);
         background-size: auto;
         background-position: right top;
-        opacity: .8;
+        opacity: .9;
     }
 
     .logo {
@@ -163,6 +164,7 @@ main {
         margin-top: 152px;
         text-align: left;
         position: relative;
+        max-width: 735px;
     }
 
     .title {
@@ -185,11 +187,11 @@ main {
         background-color: var(--dark-gray);
         flex-direction: row;
         border-radius: 28px;
-        padding: 5px;
+        padding: 5px 5px 5px 32px;
     }
 
     .form {
-        padding: 9px 27px 9px 27px;
+        padding: 9px 0px 9px 0px;
     }
 
     .logo-container {
@@ -203,4 +205,33 @@ main {
         bottom: 0;
         left: 30px;
     }
+
+    .request-btn {
+        max-width: 162px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body::after {
+        background-image: url(./assets/desktop/image-host.jpg);
+        background-position: center right;
+    }
+
+    .title {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    main {
+        padding-left: 165px; 
+        padding-top: 102px;
+    }
+
+    .dots {
+        right: 0;
+        bottom: 78px;
+        left: unset;
+    }
+
+    
 }
