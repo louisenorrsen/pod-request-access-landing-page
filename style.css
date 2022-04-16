@@ -237,9 +237,14 @@ main {
         line-height: 62px;
     }
 
+    .logo-container {
+        bottom: 33px;
+    }
+
     main {
         padding-left: 165px; 
         padding-top: 102px;
+        padding-bottom: 130px;
     }
 
     .dots {
