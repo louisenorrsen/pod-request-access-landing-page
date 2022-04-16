@@ -238,7 +238,7 @@ main {
     }
 
     .logo-container {
-        bottom: 33px;
+        bottom: 0px;
     }
 
     main {
@@ -251,6 +251,10 @@ main {
         right: 0;
         bottom: 78px;
         left: unset;
+    }
+
+    .form-container {
+        margin-top: 103px;
     }
 
     
